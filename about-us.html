@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Willow&Lex</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="JS/style.js"></script>
+  <script type="text/javascript" src="JS/instafeed.min.js"></script>
+  <script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '3055736556',
+        template: '<a href="{{link}}" id="instafeed-link"><img class="insta-image" cover src="{{image}}" /></a> ',
+        limit: '8',
+        resolution: 'standard_resolution',
+        accessToken: '3055736556.1677ed0.a2c77f64fd764a7084a331440e3cf4fb'
+    });
+    userFeed.run();
+	</script>
+</body>
+
+</html>

@@ -38,7 +38,7 @@ a {
 	text-transform: uppercase;
 	background-color: transparent;
 	text-decoration: none;
-	position: relative;
+	/*position: relative;*/
 	z-index: 2;
 	color: #f2f6f7;
 	transition: color .15s ease-out;
@@ -181,16 +181,40 @@ a {
 }
 .Collage-wrapper-inner {
 	height: 100%;
-	display: flex;
-	flex-wrap: wrap;
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
 }
-.Collage-item {
+.Collage-item-large-left {
 	display: block;
 	position: relative;
 	float: left;
 	/*box-sizing: border-box;*/
 	width: 50%;
-	height: 25%;
+	height: 33.33%;
+}
+.Collage-item-large-right {
+	display: block;
+	position: relative;
+	float: right;
+	/*box-sizing: border-box;*/
+	width: 50%;
+	height: 33.33%;
+}
+.Collage-item-small-left {
+	display: block;
+	position: relative;
+	float: left;
+	/*box-sizing: border-box;*/
+	width: 50%;
+	height: 16.66%;
+}
+.Collage-item-small-right {
+	display: block;
+	position: relative;
+	float: right;
+	/*box-sizing: border-box;*/
+	width: 50%;
+	height: 16.66%;
 }
 .Collage-item-inner {
 	position: absolute;
@@ -218,7 +242,6 @@ a {
 	margin-top: 0%;
 	vertical-align: top;
 	background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 99%);
-
 }
 .Collage-button-heading {
 	text-align: center;
